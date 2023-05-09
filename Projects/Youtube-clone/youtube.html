@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/projects/Youtube-clone/styles/general.css">
+    <link rel="stylesheet" href="/projects/Youtube-clone/styles/header.css">
+    <link rel="stylesheet" href="/projects/Youtube-clone/styles/video.css">
+    <link rel="stylesheet" href="/projects/Youtube-clone/styles/sidebar.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="/projects/Youtube-clone/icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="/projects/Youtube-clone/icons/youtube-logo.svg">
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="/projects/Youtube-clone/icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Put position absolute inside position relative -->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="/projects/Youtube-clone/icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="/projects/Youtube-clone/icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+        <img class="youtube-apps-icon" src="/projects/Youtube-clone/icons/youtube-apps.svg">
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="/projects/Youtube-clone/icons/notifications.svg">
+          <div class="notifications-count">3</div>
+        </div>
+        <img class="current-user-picture" src="/projects/Youtube-clone/channel-pictures/my-channel.jpeg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="/projects/Youtube-clone/icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/projects/Youtube-clone/icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/projects/Youtube-clone/icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/projects/Youtube-clone/icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/projects/Youtube-clone/icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="/projects/Youtube-clone/icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="/projects/Youtube-clone/thumbnails/thumbnail-1.webp">
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/projects/Youtube-clone/channel-pictures/channel-1.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Trigonometry
+              </p>
+              <p class="video-author">
+                Derek Banas
+              </p>
+              <p class="video-stats">
+                1.2M views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="/projects/Youtube-clone/thumbnails/thumbnail-2.webp">
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/projects/Youtube-clone/channel-pictures/channel-2.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Java Programming for Beginners – Full Course
+              </p>
+              <p class="video-author">
+                freeCodeCamp.org
+              </p>
+              <p class="video-stats">
+                210K views &#183; 7 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="/projects/Youtube-clone/thumbnails/thumbnail-3.webp">
+            <div class="video-time">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/projects/Youtube-clone/channel-pictures/channel-3.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Ex-Google Engineer and Blockchain CEO Drops Wisdom (Interview Highlights)
+              </p>
+              <p class="video-author">
+                Joshua Fluke
+              </p>
+              <p class="video-stats">
+                10k views &#183; 6 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="/projects/Youtube-clone/thumbnails/thumbnail-4.webp">
+            <div class="video-time">22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/projects/Youtube-clone/channel-pictures/channel-4.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Automatic Git Push - VSCode Pro Tips
+              </p>
+              <p class="video-author">
+                LevelUpTuts
+              </p>
+              <p class="video-stats">
+                346K views &#183; 9 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="/projects/Youtube-clone/thumbnails/thumbnail-5.webp">
+            <div class="video-time">11:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/projects/Youtube-clone/channel-pictures/channel-5.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Top 5 Programming Languages To Learn In 2021
+              </p>
+              <p class="video-author">
+                Life of Luba
+              </p>
+              <p class="video-stats">
+                105K views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="/projects/Youtube-clone/thumbnails/thumbnail-6.webp">
+            <div class="video-time">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="/projects/Youtube-clone/channel-pictures/channel-6.jpeg">
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                What was Coding like 40 years ago?
+              </p>
+              <p class="video-author">
+                The Coding Train
+              </p>
+              <p class="video-stats">
+                821K views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

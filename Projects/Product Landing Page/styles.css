@@ -1,0 +1,189 @@
+:root {
+  --white:hsl(0,0%,100%);
+  --text: red;
+  --pale:hsl(32,37%,92%);
+  --red: red;
+}
+
+
+*{
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--pale);
+  font-family: 'Mortal Kombat 4';
+}
+
+
+#header-img{
+  position: absolute;
+  margin: 120px -440px;
+  /*height: 10px;
+  width: 40px;*/
+  object-fit: contain;
+}
+
+
+
+#header .logo-img {
+  width: 150px;
+  height: 100px;
+  margin: 0px -450px;
+  top: 0;
+  padding: 0px;
+  background-color: red;
+}
+
+.logo-img {
+  cursor: pointer;
+}
+
+
+
+#nav-bar {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: var(--white);
+  padding: 10px;
+}
+
+.nav-links {
+  position: absolute;
+  font-family: 'Mortal Kombat 4';
+  top: 20px;
+  display: flex;
+  list-style: none;
+}
+
+
+nav{
+  height: 80px;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 0 10px;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.the-product {
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-family: 'Mortal Kombat 4', sans-serif;
+}
+
+/*.feature {
+  position: absolute;
+  margin: 50px 200px;
+  font-size: 20px;
+}*/
+
+#video {
+  width: 50%;
+}
+
+#trumpet1 {
+  width: 250px;
+  height: 140px;
+  background-color: var(--pale);
+  margin: 20px -470px;
+  position: absolute;
+  cursor:pointer;
+}
+
+#trumpet2 {
+  position: absolute;
+  width: 250px;
+  height: 140px;
+  margin: 20px -100px;
+  cursor: pointer;
+}
+
+
+#trumpet3 {
+  position: absolute;
+  width: 250px;
+  height: 140px;
+  margin: 20px 220px;
+  cursor: pointer;
+}
+
+h2:hover{
+  font-size: 30px;
+  color: red;
+}
+
+#features {
+  display:inline;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  font-family: 'Mortal Kombat 4';
+
+}
+
+section::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+form {
+  margin: 90px;
+}
+
+
+#email {
+  width:150px
+}
+
+section {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+#email-section {
+  margin-top: 100px;
+}
+
+input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--red);
+}
+
+#submit {
+  background-color: var(--red);
+  cursor: pointer;
+}
+
+@media only screen and (min-width:600px) {
+  #nav-bar {
+    flex-direction: row;
+  }
+
+}
+
+/*@media only screen and (450px < width < 600px){
+  .card {font-size: 0.85rem;
+  }
+  .product-cards {
+    height: 400px;
+  }
+}

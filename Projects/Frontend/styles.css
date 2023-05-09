@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: black;
+}
+
+.header {
+  text-align: center;
+  height: 105px;
+  text-transform: uppercase;
+  padding: 2px;
+  background-color: whitesmoke;
+  opacity: .2;
+  color: black;
+  border-bottom: 2px solid red;
+}
+
+
+.header:hover {
+  opacity: .4;
+}
+
+.header h1:hover {
+  font-size: 36px;
+  background-color: red;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+
+img:hover {
+  cursor: pointer;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Mortal Kombat 4';
+  color: red
+
+}
+
+
+p{
+  position: relative;
+  text-align: center;
+}

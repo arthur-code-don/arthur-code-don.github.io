@@ -1,0 +1,101 @@
+body {
+  background-color: #000000;
+  color: #ff0303;
+  font-family: monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  border: 6px solid rgb(250, 0, 0);
+  border-radius: 5px;
+  max-width: 350px;
+  width: 100%;
+}
+
+p {
+  color: #176303;
+}
+
+.attribution {
+  position: absolute;
+  right: 50px;
+  bottom: 0px;
+  font-size: 0.8rem;
+  background-color: #045716;
+  padding: 10px;
+  border-radius: 25px;
+  color: #ff0303;
+  box-shadow: 1px 2px 5px 1px rgba(216, 18, 18, 0.2);
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+.content {
+  width: 75%;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+.content p {
+  max-width: 80%;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 1px dotted #ff0000;
+  height: 90vh;
+}
+
+button {
+  width: 200px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 35px;
+  border: 1px solid #ff0303;
+  background: transparent;
+  color: green;
+  border-radius: 25px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.reveal-btn {
+  border: none;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.reveal-btn:hover {
+  color: white;
+  background-color: transparent;
+}
+
+
+/* BREAKPOINTS*/
+@media (max-width: 1600px) {
+  .attribution {
+    position: absolute;
+    margin: 5px -50px;
+    width: 200px;
+  }
+}
