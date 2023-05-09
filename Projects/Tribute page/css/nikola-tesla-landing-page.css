@@ -1,0 +1,1408 @@
+* {
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/nikola-tesla.jpg);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /*background-color: #03050f;*/
+  background-position: center;
+  background-size:cover;
+  /*background-repeat: no-repeat;*/
+  color: white;
+  text-align: center;
+  font-family: 'Mortal Kombat 4', sans-serif;
+
+}
+
+h1 {
+  padding: 20px;
+  font-family: 'Mortal Kombat 4', sans-serif;
+  font-size: 14px;
+}
+
+h3 {
+  font-size: 18px;
+  color: red;
+  font-family: 'Mortal Kombat 4', sans-serif;
+  background-color: black;
+  opacity: .6;
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+}
+
+/*NAVIGATION BAR WRAPPER*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  opacity: .5;
+
+}
+
+.emc2-logo {
+  font-size: 1.5rem;
+  margin: .5rem;
+
+}
+
+.navbar-links ul {
+  margin: -20px 5px;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links ul a:hover{
+  background-color: white;
+  color: red;
+  font-size: 1rem;
+  border-radius:30px;
+  line-height: 5px;
+}
+
+
+/*SPAN ELEMENTS*/
+span {
+  color: red;
+  font-size: 1rem;
+  font-family: 'Mortal Kombat 4', sans-serif;
+}
+
+/*SPAN ELEMENTS:HOVER*/
+span:hover {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Mortal Kombat 4', sans-serif;
+}
+
+/*SPAN-E TOP LEFT LOGO*/
+.span-e {
+  font-size: 23px;
+  /*position:absolute;*/
+  color: white;
+  /*margin: 40px -30px;*/
+  
+}
+
+/*SPAN-E TOP LEFT LOGO: HOVER*/
+.span-e:hover{
+  color: red;
+  font-size: 36px;
+}
+
+/*SPAN-EQUALS TOP LEFT LOGO*/
+.span-equal{
+  font-size: 23px;
+  color:green;
+  /*position: absolute;*/
+  /*margin: 40px -5px;*/
+}
+
+/*SPAN-EQUALS:HOVER TOP LEFT LOGO*/
+.span-equal:hover{
+  color:whitesmoke;
+  font-size: 33px;
+}
+
+/*SPAN-MC TOP LEFT LOGO*/
+.span-mc {
+  color: red;
+  font-size: 23px;
+  /*position: absolute;
+  margin: 40px 23px;*/
+}
+
+/*SPAN-MC:HOVER TOP LEFT LOGO*/
+.span-mc:hover {
+  color: gold;
+  font-size: 33px;
+}
+
+
+/*SPAN-2 LOGO ELEMENT */
+sup {
+  color: white;
+  font-size: 23px;
+  /*position: absolute;
+  margin: 18px 58px;*/
+}  
+
+/*SPAN-2:HOVER LOGO ELEMENT */
+sup:hover {
+  color: green;
+  font-size: 33px;
+}
+
+
+/*EINSTEIN-LOGO-TOP-LEFT NAV WRAPPER*/
+#einstein-logo {
+  margin: -100px 90px 0;
+  width: 2.3em;
+  height: 2.3em;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/*EINSTEIN-LOGO-TOP-LEFT:HOVER NAV WRAPPER*/
+#einstein-logo:hover{
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 5em;
+}
+
+
+/*UL TO THE PORTFOLIO DROP DOWN MENU*/
+.portfolio-drop-down li a{
+  font-size: 10px;
+  transition: all 0.5s ease 0s;
+  line-height: -60px;
+  margin: -5px -10px;
+  border-radius: 12px;
+}
+
+/*UL TO THE PORTFOLIO DROP DOWN MENU:HOVER*/
+.portfolio-drop-down li a:hover{
+  position: initial;
+}
+
+/*LI TO THE NAVIGATION LINKS:HOVER */
+li .active-navbar-links a:hover {
+  background-color: white;
+  font-size: 16px;
+  margin-bottom: 7px;
+  padding: 5px;
+  margin: 0 30px;
+  border-radius: 30px;
+  transition: all 0.5s ease 0s;
+}
+
+/*UL THAT HOLDS ALL OF THE HEADER NAVIGATION LINKS*/
+.navbar-links {
+  padding-top: 0px;
+  display:flex;
+  height:100px;
+  padding: 0px;
+  list-style: none;
+  justify-content:space-between; 
+}
+
+/*UL LI A HOLDS ALL OF THE LINKS WITH ANCHOR TAGS*/
+ul li a{
+  text-decoration: none;
+  justify-content:space-between; 
+  float: left;
+  width: 90px;
+  height: 20px;
+  padding: 0;
+  background-color: black; 
+  line-height: 10px;
+  text-align: center;
+  margin-top: -25px;
+  margin-right: 10px;
+  margin-left: -20px;
+  color: white;
+  display:block;
+  opacity: .8;
+}
+
+/*UL LI A:HOVER HOLDS ALL OF THE NAV LINKS WITH ANCHOR TAGS*/
+ul li a:hover  {
+  color: red;
+}
+
+/*UL LI UL LI HIDES THE PORTFOLIO SUBLINKS*/
+ul li ul li {
+  display: none;
+}
+
+/*UL LI: HOVER UL LI DISPLAYS THE PORTFOLIO SUBLINKS UPON HOVER*/
+ul li:hover ul li {
+  display:inline-block;
+  margin: 15px -20px;
+} 
+
+/*HAMBURGER MENU NAVIGATION*/
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.nt-tribute-mobile-nav-wrapper {
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  padding: -80px;
+  margin: -92px 145px;
+  opacity: .4;
+}
+
+/*HAMBURGER MENU TOGGLE BUTTON ACTIVATED*/
+
+
+#sub-btn {
+  border: none;
+  position: absolute;
+  margin: 200px 135px;
+  float: right;
+  background: rgba(0,0,0,.87);
+  opacity: .5;
+  font-family: 'Mortal Kombat 4', sans-serif;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease 0s;
+}
+
+#sub-btn:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  color: red;
+}
+
+
+
+/*CONTACT BUTTON*/
+button {
+  border: none;
+  position:absolute; top: 10px; right: 76.7%;
+  float:left;
+  background-color: black;
+  font-family: 'Mortal Kombat 4', sans-serif;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+  font-size: 19px;
+  transition: all 0.3s ease 0s;
+}
+
+/*CONTACT BUTTON LINK STYLE*/
+.sub-btn a{
+  color: gold;
+  font-size: 20px;
+}
+
+/*CONTACT BUTTON:HOVER LINK STYLE*/
+.sub-btn a:hover {
+  color:red;
+  background-color: white;
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+/*CONTACT BUTTON:HOVER */
+button:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  background-color: black;
+  color: green;
+}
+
+
+/*NAVIGATION LINKS*/
+li .active-navbar-links a {
+  font-size: 25px;
+  line-height: -50px;
+  margin: -10px;
+  padding: 3px;
+  border-radius: 20px;
+}
+
+/*NAVIGATION LINKS:HOVER*/
+.active-navbar-links a:hover {
+  background-color: white;
+  color: red;
+  font-size: 25px;
+
+}
+
+
+
+
+/*BOTTOM WIKI PAGE*/
+#tribute-link:hover{
+  color: red;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/*h1 NIKOLA TESLA TRIBUTE*/
+#title {
+  color: rgb(8, 3, 3);
+  font-size: 16px;
+  word-spacing: 40px;
+  letter-spacing: 4px;
+  opacity: 1.0;
+}
+
+
+/*SPAN NIKOLA "TESLA" TRIBUTE*/
+.span-tesla-tribute {
+  color: gold;
+  font-family:'Mortal Kombat 1', sans-serif;
+  font-size: 30px;  
+}
+
+/*SPAN NIKOLA "TESLA" TRIBUTE:HOVER*/
+.span-tesla-tribute:hover {
+  color: red;
+  background-color: white;
+  border-radius: 20px;
+}
+
+
+/*h1 Nikola Tesla Tribute h1:HOVER*/
+#title:hover {
+  font-size: 18px;
+  color: red;
+  background-color: white;
+  border-radius: 50px;
+  opacity: .6;
+}
+
+/*DIV IMG CONTAINER HOUSING NIKOLA TESLA IMG*/
+#img-div {
+  opacity: .7;
+}
+
+
+
+
+
+/*DIV CONTAINER HOUSING TESLA TIMELINE*/
+#image {
+  background-size:cover;
+  height: 333px;
+  max-width: 100%;
+  position:relative; top: -14px; left: -2%;
+}
+
+
+/*DIV CONTAINER HOUSING NIKOLA TESLA IMG*/
+.img-container {
+  margin: 0;
+  padding: 0px;
+  height: 100vh;
+  background-color: black;
+  opacity: .4;
+}
+
+
+/*THE WONDERFUL LIFE OF NIKOLA TESLA <P>:HOVER */
+#tesla-intro:hover{
+  width: 270px;
+  font-size: 23px;
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+
+/*THE MAN THE MYTH THE LEGEND DIV*/
+.caption {
+  padding-top: 5px;
+  font-size: 25px;
+  position:absolute; left: 63px;
+  margin: 0px;
+
+}
+
+.caption:hover {
+  color: red;
+}
+
+
+#img-caption {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0px 0px;
+  text-align: center;
+}
+
+
+/*THE MAN THE MYTH THE LEGEND DIV:HOVER */
+#img-caption:hover {
+  line-height: 50px;
+  height: 50px;
+  width: 400px;
+  font-size: 23px;
+  padding: 0px;
+  color: red;
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
+
+/*DIV CONTAINER STYLES HOLDING THE LIFE TIMELINE */
+.life {
+  font-size: 25px;
+  text-align: left;
+  font-family: 'Mortal Kombat 1', sans-serif;  
+  padding: 30px 70px;
+  max-width: 613px;
+  margin: 1px auto;
+  background-color: black;
+  opacity: .6;
+}
+
+/*P ELEMENT STYLES The wonderful life of Nikola Tesla*/
+.life-header {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Mortal Kombat 4', sans-serif;
+  padding: 10px;
+  }
+
+/*TARGETING ALL THE BOLD ELEMENTS*/
+.bold {
+    font-size: 18px;
+    font-family: 'Mortal Kombat 4', sans-serif;
+    font-weight: bold;
+    color: red;
+}
+
+/*SPAN-2:HOVER LOGO ELEMENT */
+sup:hover {
+  color: green;
+  font-size: 33px;
+}
+
+
+
+/*TARGETING ALL THE LI ELEMENTS*/
+li {
+  margin: 10px;
+  font-size: 18px;
+}
+
+/*BOTTOM P ELEMENT OF TESLA QUOTE*/
+.quote {
+  margin: 30px 30px 5px;
+  font-size: 23px;
+  font-style: italic;
+}
+
+/*BOTTOM P ELEMENT OF TESLA QUOTE:HOVER*/
+.quote:hover {
+  font-size: 28px;
+  color: goldenrod;
+}
+
+/*BOTTOM P ELEMENT OF TESLA AUTHOR QUOTE*/
+.quote-author {
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+/*BOTTOM P:HOVER ELEMENT OF TESLA AUTHOR QUOTE*/
+.quote-author:hover {
+  background-color: black;
+  color: rgb(1, 51, 1);
+  font-size: 28px;
+}
+
+/*ALL ANCHOR TAGS*/
+a {
+  color: rgb(35, 135, 35);
+  text-decoration: none;
+
+}
+
+/*TESLA DOCUMENTARY VIDEO*/
+#tesla-doc-video {
+  width: 450px;
+  height: 300px;
+  position:sticky; top: 88px; right: 67.7%;
+}
+
+/*TESLA VIDEO CAPTION*/
+.tesla-vid-caption {
+  float: left;
+  color: red;
+  background-color: white;
+  font-size: 28px;
+  border-radius: 30px;
+  position: relative; top:-15px; left: 1.7%;
+}
+
+/*TESLA VIDEO CAPTION:HOVER*/
+.tesla-vid-caption:hover{
+  background-color: red;
+  color: white;
+  font-size: 35px;
+  border-radius: 18px;
+}
+
+#top-secret {
+  width: 394px;
+  height:394px;
+  float: right;
+  position:relative; top: -374px; left: -3%;
+  border-radius: 90px;
+
+}
+/*********************************************/
+/*RESPONSIVENESS FOR MOBILE DEVICES*/
+@media all and (max-width: 768px) { 
+  .toggle-button {
+    display: flex;
+    }
+  }
+
+  #sub-btn {
+    position: absolute;
+    margin: -20px -280px;
+    background: none;
+    transition: all 0.3s ease 0s;
+
+
+  }
+
+  #sub-btn a{
+    font-size: 18px;
+    width: 20px;
+  }
+
+  #sub-btn:hover a {
+    font-size: 24px;
+    margin: 0 -17px;
+    padding: 3px 3px;
+    transition: all 0.3s ease 0s;
+
+  }
+  
+  .nt-tribute-mobile-nav-wrapper {
+    opacity: .5;
+    margin: -70px 120px;
+    width: 250px;
+    height: 170px;
+    object-fit:cover;
+    
+  }
+
+  .navbar-links {
+    display: none; /*display none will hide the nav links by default*/
+    width: 100%;
+  }
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+      
+  }
+  
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .navbar-links li {
+    text-align: center;
+  }
+  
+  .navbar-links li a{
+    padding: .5rem 1rem;
+  }
+  
+  .navbar-links.active {
+    display: flex;
+  }
+
+
+
+#top-secret {
+  width: 60px;
+  height:60px;
+  position:relative;
+  margin: 240px 43px;
+  cursor: pointer;
+
+}
+
+#top-secret:hover {
+  cursor: pointer;
+}
+
+
+#tesla-doc-video {
+  width: 400px;
+}
+
+
+
+/***********************************************/
+  /*RESPONSIVENESS FOR DESKTOP DEVICES*/
+  
+  @media all and (min-width: 769px) {
+  
+
+
+
+    /*SPAN-E TOP LEFT LOGO*/
+    .span-e {
+      font-size: 23px;
+      position:absolute;
+      color: white;
+      margin: -40px -6px;
+      
+    }
+    
+    /*SPAN-E TOP LEFT LOGO: HOVER*/
+    .span-e:hover{
+      color: red;
+      font-size: 36px;
+    }
+    
+    /*SPAN-EQUALS TOP LEFT LOGO*/
+    .span-equal{
+      font-size: 23px;
+      color:green;
+      position: absolute;
+      margin: -40px 11px;
+    }
+    
+    /*SPAN-EQUALS:HOVER TOP LEFT LOGO*/
+    .span-equal:hover{
+      color:whitesmoke;
+      font-size: 33px;
+    }
+    
+    /*SPAN-MC TOP LEFT LOGO*/
+    .span-mc {
+      color: red;
+      font-size: 23px;
+      position: absolute;
+      margin: -40px 33px;
+    }
+    
+    /*SPAN-MC:HOVER TOP LEFT LOGO*/
+    .span-mc:hover {
+      color: gold;
+      font-size: 33px;
+    }
+    
+    
+    /*SPAN-2 LOGO ELEMENT */
+    sup {
+      color: white;
+      font-size: 18px;
+      position: absolute;
+      margin: -58px 68px;
+    }  
+    
+    /*SPAN-2:HOVER LOGO ELEMENT */
+    sup:hover {
+      color: green;
+      font-size: 27px;
+    }
+    
+    
+    
+        #einstein-logo {
+        position: absolute;
+        margin: -10px -270px;
+        width: 2.3em;
+        height: 2.3em;
+        cursor: pointer;
+        border-radius: 30px;
+      }
+      
+      /*EINSTEIN-LOGO-TOP-LEFT:HOVER NAV WRAPPER*/
+      #einstein-logo:hover{
+        width: 3em;
+        height: 3em;
+        border-radius: 4em;
+      }
+    
+    
+      #emc2-tablet {
+        position: absolute;
+        background-color: red;
+        margin: 70px -375px;
+        
+      }
+      
+      #sub-btn {
+        position: absolute;
+        margin: 5px -568px;
+        padding: 5px;
+        font-size: 14px;
+      }
+      
+    
+      #sub-btn a:hover {
+        background-color: whitesmoke;
+        color: darkred;
+        font-size: 20px;
+    
+      } 
+    
+      /*NAVIGATION BAR WRAPPER*/
+    .navbar {
+      display: flex; /*flex*/
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      color: white;
+      height: 70px;
+      width: 100%;
+      opacity: .5;
+    
+    
+    }
+    
+      .navbar-links {
+        padding-top: 0px;
+        display:flex; /*flex*/
+        padding: 0px;
+        list-style: none;
+        justify-content:space-between; 
+        /*position: fixed;*/
+    
+      }
+    
+    
+      .navbar-links ul {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        display: inline;
+      }
+      
+      .navbar-links li {
+        list-style: none;
+        
+      }
+      
+    
+      .navbar-links li a {
+        text-decoration: none;
+        background: none;
+        color: white;
+        display: block;
+        
+      }
+    
+      .navbar-links li a:hover {
+        background-color: white;
+        width: 85px;
+        line-height: 20px;
+      } 
+    
+      .navbar-links ul li a{
+        padding: 0px 10px;
+        margin: 20px 75px;
+        text-align:center;
+        list-style-type: none;
+        width: 1px;
+        height: 20px;
+        display:inline; /*inline*/
+    
+      }
+      
+    
+      
+    
+    /*UL LI A HOLDS ALL OF THE LINKS WITH ANCHOR TAGS*/
+    ul li a{
+      text-decoration: none;
+      justify-content:space-between; 
+      width: 100px;
+      height: 40px; 
+      line-height: 20px;
+      text-align: center;
+      color: white;
+      display:block; /*block*/
+      opacity: .8;
+      /*height: 100%; /* Full height */
+      /*position: fixed; /* Make it stick, even on scroll */
+      /*verflow: auto; /* Enable scrolling if the sidenav has too much content */
+    
+    }
+    
+    /*UL LI A:HOVER HOLDS ALL OF THE NAV LINKS WITH ANCHOR TAGS*/
+    ul li a:hover  {
+      color: red;
+    }
+    
+    ul li ul .active-navbar-links a{
+      margin: 58px 68px;
+      line-height: 20px;
+      display: block;
+      transition: all 0.5s ease 0s;
+    
+    }
+    
+    
+    /*UL LI UL LI HIDES THE PORTFOLIO SUBLINKS*/
+    ul li ul li {
+      display: none;
+      transition: all 0.5s ease 0s;
+    
+    }
+    
+          
+    
+    
+    #front-end-style-btn {
+      margin: -35px -180px;
+      background-color: blue;
+      position: absolute;
+      width: 80px;
+      border-radius: 30px;
+      height: 40px;
+      font-size: 18px;
+      color: red;
+      font-weight: 900;
+      transition: all 0.5s ease 0s;
+    
+    }
+    
+    #front-end-style-btn:hover {
+      background-color: whitesmoke;
+      color: red;
+      padding: 2px;
+      transition: all 0.5s ease 0s;
+    
+    
+    }
+    
+    
+    
+    #back-end-style-btn {
+      position: absolute;
+      margin: 5px -30px;
+      background-color: black;
+      width: 80px;
+      border-radius: 30px;
+      height: 40px;
+      font-size: 18px;
+      color: green;
+      opacity: 1;
+      font-weight: 900;
+      cursor: pointer;
+      transition: all 0.5s ease 0s;
+    
+    }
+    
+    #back-end-style-btn:hover {
+      background-color: white;
+      color: red;
+      padding: 2px;
+      margin: 0 10px;
+      transition: all 0.5s ease 0s;
+    
+    
+    
+    }
+    
+    
+    
+    /*LI TO THE NAVIGATION LINKS:HOVER */
+    /*li .active-navbar-links a:hover {
+      background-color: white;
+      margin-bottom: 7px;
+      padding: 5px;
+      margin: 0;
+      border-radius: 20px;
+      transition: all 0.5s ease 0s;
+    }*/
+    
+    
+    /*ul {
+      list-style-type: none;
+      padding: 0;
+      overflow: hidden;
+    }
+        
+    
+    li a {
+      color: white;
+      margin: 0 200px;
+      text-align: center;
+      padding: 14px 1px;
+      text-decoration: none;
+    }
+    
+    
+    
+    
+    .active {
+      background-color: gold;
+    }*/
+    
+    
+    
+    
+    
+    
+    .toggle-button {
+      display: none;
+    }
+    
+    .toggle-button .bar {
+      display: none;
+    }
+    
+    .nt-tribute-mobile-nav-wrapper {
+      display: none;
+    }
+    
+    .tesla-vid-caption {
+      margin: -14px;
+      font-size: 16px;
+    }
+    
+    .tesla-vid-caption:hover{
+      transition: all 0.5s ease 0s;
+    
+    } 
+    
+    #tesla-doc-video {
+      width: 500px;
+    }
+    
+    .img-container {
+      width: 100%;
+      height: 600px;
+    }
+    
+    .tesla-background-img {
+      position: absolute;
+      cursor: pointer;
+      margin: -100px 500px;
+      width: 250px;
+      height: 20px;
+    }
+    
+    #image {height: 220px; width: 250px;
+    margin: 10px -50px;}
+    
+    #top-secret {
+      width: 200px;
+      height: 200px;
+      border-radius: 0%;
+      margin: 70px 30px;
+    }
+    
+    .life-header {
+      position: absolute;
+      margin: 0px;
+      width: 500px;
+    }
+    
+    /*THE WONDERFUL LIFE OF NIKOLA TESLA <P>:HOVER */
+    #tesla-intro:hover{
+      width: 170px;
+      height: 100;
+      margin: -100px 10px;
+      font-size: 20px;
+      background-color: whitesmoke;
+      border-radius: 20px;
+    }
+
+
+/*RESPONSIVENESS FOR TABLETS */
+@media all and (min-width: 807px) {
+
+  /*SPAN-E TOP LEFT LOGO*/
+.span-e {
+  font-size: 23px;
+  position:absolute;
+  color: white;
+  margin: -70px -76px;
+  
+}
+
+/*SPAN-E TOP LEFT LOGO: HOVER*/
+.span-e:hover{
+  color: red;
+  font-size: 36px;
+}
+
+/*SPAN-EQUALS TOP LEFT LOGO*/
+.span-equal{
+  font-size: 23px;
+  color:green;
+  position: absolute;
+  margin: -65px -53px;
+}
+
+/*SPAN-EQUALS:HOVER TOP LEFT LOGO*/
+.span-equal:hover{
+  color:whitesmoke;
+  font-size: 33px;
+}
+
+/*SPAN-MC TOP LEFT LOGO*/
+.span-mc {
+  color: red;
+  font-size: 23px;
+  position: absolute;
+  margin: -66px -30px;
+}
+
+/*SPAN-MC:HOVER TOP LEFT LOGO*/
+.span-mc:hover {
+  color: gold;
+  font-size: 33px;
+}
+
+
+/*SPAN-2 LOGO ELEMENT */
+sup {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  margin: -79px 8px;
+}  
+
+/*SPAN-2:HOVER LOGO ELEMENT */
+sup:hover {
+  color: green;
+  font-size: 27px;
+}
+
+
+}
+
+
+#front-end-style-btn {
+  margin: -35px -280px;
+  background-color: blue;
+  position: absolute;
+  width: 80px;
+  border-radius: 30px;
+  height: 40px;
+  font-size: 18px;
+  color: red;
+  font-weight: 900;
+  transition: all 0.5s ease 0s;
+
+}
+
+#front-end-style-btn:hover {
+  background-color: whitesmoke;
+  color: red;
+  padding: 2px;
+  transition: all 0.5s ease 0s;
+
+
+}
+
+
+
+#back-end-style-btn {
+  position: absolute;
+  margin: -33px -320px;
+  background-color: black;
+  width: 80px;
+  border-radius: 30px;
+  height: 40px;
+  font-size: 18px;
+  color: green;
+  opacity: 1;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+
+}
+
+#back-end-style-btn:hover {
+  background-color: white;
+  color: red;
+  padding: 2px;
+  margin: -33px -320px;
+  transition: all 0.5s ease 0s;
+
+
+
+}
+
+
+}
+
+
+/*TESLA VIDEO CAPTION*/
+/*.tesla-vid-caption {
+  float: left;
+  color: red;
+  background-color: white;
+  font-size: 28px;
+  border-radius: 30px;
+  position: relative; top:5px; left: 1.7%;
+}
+
+/*TESLA VIDEO CAPTION:HOVER*/
+/*.tesla-vid-caption:hover{
+  background-color: red;
+  color: white;
+  font-size: 35px;
+  border-radius: 18px;
+}
+
+  
+#img-caption {
+  font-weight: 900;
+  font-size: 2px;
+  margin: 0;
+  text-align: center;
+}*/
+
+
+  /*RESPONSIVENESS FOR TABLET DEVICES*/
+  
+/*@media all and (min-width: 581px) {
+  
+  .toggle-button {
+   display: none;
+  }
+
+  .toggle-button .bar { 
+    display: none;
+
+  }
+
+  .nt-tribute-mobile-nav-wrapper { 
+    display: none;
+
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  opacity: .5;
+
+}
+
+/*LOGOS IN NAVBAR*/
+
+/*SPAN-E TOP LEFT LOGO*/
+/*.span-e {
+  font-size: 23px;
+  position:absolute;
+  color: white;
+  margin: 0px -280px;
+  
+}
+
+/*SPAN-E TOP LEFT LOGO: HOVER*/
+/*.span-e:hover{
+  color: red;
+  font-size: 28px;
+}
+
+/*SPAN-EQUALS TOP LEFT LOGO*/
+/*.span-equal{
+  font-size: 23px;
+  color:green;
+  position: absolute;
+  margin: 0px -260px;
+}
+
+/*SPAN-EQUALS:HOVER TOP LEFT LOGO*/
+/*.span-equal:hover{
+  color:whitesmoke;
+  font-size: 28px;
+}
+
+/*SPAN-MC TOP LEFT LOGO*/
+/*.span-mc {
+  color: red;
+  font-size: 23px;
+  position: absolute;
+  margin: 3px -241px;
+}
+
+/*SPAN-MC:HOVER TOP LEFT LOGO*/
+/*.span-mc:hover {
+  color: gold;
+  font-size: 26px;
+}
+
+
+/*SPAN-2 LOGO ELEMENT */
+/*sup {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  margin: -4px -205px;
+} 
+
+/*SPAN-2:HOVER LOGO ELEMENT */
+/*sup:hover {
+  color: green;
+  font-size: 19px;
+}
+
+
+/*EINSTEIN-LOGO-TOP-LEFT NAV WRAPPER*/
+/*#einstein-logo {
+  display: none;
+  
+}
+
+/*EINSTEIN-LOGO-TOP-LEFT:HOVER NAV WRAPPER*/
+/*#einstein-logo:hover{
+  width: 2.3em;
+  height: 2.3em;
+  border-radius: 5em;
+}
+
+
+
+/*NAVBAR LINKS*/
+
+/*.navbar-links ul {
+  margin: -21px 101px;
+  padding: 5px 0px;
+  font-size: 14px;
+  display:block;
+  text-align: center;
+}
+
+
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: flex;
+}
+
+
+
+
+.navbar-links ul a:hover{
+  background-color: white;
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+  border-radius:30px;
+  line-height: -15px;
+}
+
+/*UL TO THE PORTFOLIO DROP DOWN MENU*/
+/*.portfolio-drop-down li a{
+  font-size: 14px;
+  transition: all 0.5s ease 0s;
+  line-height: 12px;
+  margin: 0 -19px;
+  border-radius: 12px;
+}
+
+
+/*UL TO THE PORTFOLIO DROP DOWN MENU:HOVER*/
+/*.portfolio-drop-down li a:hover{
+  position: initial;
+
+}
+
+
+/*LI TO THE NAVIGATION LINKS:HOVER */
+/*li .active-navbar-links a:hover {
+  background-color: white;
+  margin-bottom: 7px;
+  padding: 5px 5px;
+  margin: 0;
+  border-radius: 20px;
+  transition: all 0.5s ease 0s;
+}
+
+
+/*UL THAT HOLDS ALL OF THE HEADER NAVIGATION LINKS*/
+/*.navbar-links {
+  padding-top: 0px;
+  display:flex;
+  height:100px;
+  padding: 0px;
+  list-style: none;
+  justify-content:space-between; 
+}
+
+/*UL LI A HOLDS ALL OF THE LINKS WITH ANCHOR TAGS*/
+/*ul li a{
+  text-decoration: none;
+  justify-content:space-between; 
+  float: left;
+  width: 100px;
+  height: 30px;
+  padding: 0;
+  background-color: black; 
+  line-height: 10px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: white;
+  display:block;
+  opacity: .8;
+}
+
+
+/*UL LI A:HOVER HOLDS ALL OF THE NAV LINKS WITH ANCHOR TAGS*/
+/*ul li a:hover  {
+  color: red;
+}
+
+
+/*UL LI UL LI HIDES THE PORTFOLIO SUBLINKS*/
+/*ul li ul li {
+  display: none;
+
+}
+
+
+/*UL LI: HOVER UL LI DISPLAYS THE PORTFOLIO SUBLINKS UPON HOVER*/
+/*ul li:hover ul li {
+  display: block;
+/*}
+
+  

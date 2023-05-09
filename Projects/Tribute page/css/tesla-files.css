@@ -1,0 +1,860 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  color: white;
+  padding: 0;
+  font-family: 'Mortal Kombat 4', sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/tesla-files.jpg);
+  background-color: black;
+  background-position: center;
+  background-size: cover; /* this will make sure the image covers the entire background */
+  background-repeat: no-repeat; /* this will prevent the image from repeating */
+}
+
+/*NAVIGATION BAR WRAPPER*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  opacity: .5;
+
+}
+
+.emc2-logo {
+  font-size: 1.5rem;
+  margin: .5rem;
+
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+
+.navbar-links ul a:hover{
+  background-color: white;
+  color: red;
+  font-size: 1rem;
+  border-radius:30px;
+  line-height: 10px;
+}
+
+/*SPAN ELEMENTS*/
+span {
+  color: red;
+  font-size: 1rem;
+  font-family: 'Mortal Kombat 4', sans-serif;
+}
+
+/*SPAN ELEMENTS:HOVER*/
+span:hover {
+  color: white;
+  font-size: 2rem;
+  font-family: 'Mortal Kombat 4', sans-serif;
+}
+
+/*SPAN-E TOP LEFT LOGO*/
+.span-e {
+  font-size: 23px;
+  /*position:absolute;*/
+  color: white;
+  /*margin: 40px -30px;*/
+  
+}
+
+/*SPAN-E TOP LEFT LOGO: HOVER*/
+.span-e:hover{
+  color: red;
+  font-size: 36px;
+}
+
+/*SPAN-EQUALS TOP LEFT LOGO*/
+.span-equal{
+  font-size: 23px;
+  color:green;
+  /*position: absolute;*/
+  /*margin: 40px -5px;*/
+}
+
+/*SPAN-EQUALS:HOVER TOP LEFT LOGO*/
+.span-equal:hover{
+  color:whitesmoke;
+  font-size: 33px;
+}
+
+/*SPAN-MC TOP LEFT LOGO*/
+.span-mc {
+  color: red;
+  font-size: 23px;
+  /*position: absolute;
+  margin: 40px 23px;*/
+}
+
+/*SPAN-MC:HOVER TOP LEFT LOGO*/
+.span-mc:hover {
+  color: gold;
+  font-size: 33px;
+}
+
+
+/*SPAN-2 LOGO ELEMENT */
+sup {
+  color: white;
+  font-size: 23px;
+  /*position: absolute;
+  margin: 18px 58px;*/
+}  
+
+/*SPAN-2:HOVER LOGO ELEMENT */
+sup:hover {
+  color: green;
+  font-size: 33px;
+}
+
+/*EINSTEIN-LOGO-TOP-LEFT NAV WRAPPER*/
+#einstein-logo {
+  margin: -100px 90px 0;
+  width: 2.3em;
+  height: 2.3em;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/*EINSTEIN-LOGO-TOP-LEFT:HOVER NAV WRAPPER*/
+#einstein-logo:hover{
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 5em;
+}
+
+
+/*UL TO THE PORTFOLIO DROP DOWN MENU*/
+.portfolio-drop-down li a{
+  font-size: 14px;
+  transition: all 0.5s ease 0s;
+  line-height: 12px;
+  margin: 0;
+  border-radius: 12px;
+}
+
+/*UL TO THE PORTFOLIO DROP DOWN MENU:HOVER*/
+.portfolio-drop-down li a:hover{
+  position: initial;
+}
+
+/*LI TO THE NAVIGATION LINKS:HOVER */
+li .active-navbar-links a:hover {
+  background-color: white;
+  margin-bottom: 7px;
+  padding: 5px;
+  margin: 0;
+  border-radius: 20px;
+  transition: all 0.5s ease 0s;
+}
+
+/*UL THAT HOLDS ALL OF THE HEADER NAVIGATION LINKS*/
+.nav-links {
+  padding-top: 0px;
+  display:flex;
+  height:100px;
+  padding: 0px;
+  list-style: none;
+  justify-content:space-between; 
+}
+
+/*UL LI A HOLDS ALL OF THE LINKS WITH ANCHOR TAGS*/
+ul li a{
+  text-decoration: none;
+  justify-content:space-between; 
+  float: left;
+  width: 100px;
+  height: 30px;
+  padding: 0;
+  background-color: black; 
+  line-height: 10px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: white;
+  display:block;
+  opacity: .8;
+}
+
+
+/*UL LI A:HOVER HOLDS ALL OF THE NAV LINKS WITH ANCHOR TAGS*/
+ul li a:hover  {
+  color: red;
+}
+
+/*UL LI UL LI HIDES THE PORTFOLIO SUBLINKS*/
+ul li ul li {
+  display: none;
+
+}
+
+
+/*UL LI: HOVER UL LI DISPLAYS THE PORTFOLIO SUBLINKS UPON HOVER*/
+ul li:hover ul li {
+  display: block;
+}
+
+
+
+/*HAMBURGER MENU NAVIGATION*/
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
+}
+
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.nt-conductor-mobile-nav-wrapper {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  padding: 0;
+  margin: -60px 150px;
+}
+
+/*HAMBURGER MENU TOGGLE BUTTON ACTIVATED*/
+
+
+/*HEADING*/
+#heading {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  padding: 2PX;
+  font-family: 'Mortal Kombat 4', sans-serif;
+
+}
+
+
+#heading:hover {
+  color: red;
+  font-size: 20px;
+  margin: 20px 5px;
+
+}
+/*TOP SECRET DOCUMENTS*/
+#image1 {
+  margin: 20px 10px;
+}
+
+#top-secret1 {
+  margin: 10px 45px;
+}
+
+#image2 {
+  margin: 20px 140px;
+}
+
+#top-secret2 {
+  margin: 10px 180px;
+}
+
+#image3 {
+  margin: 20px 260px;  
+}
+
+
+#top-secret3 {
+  margin: 0px 285px;
+}
+
+
+#image4 {
+  margin: 10px 10px;  
+}
+
+#top-secret4 {
+  margin: 193px 29px;
+}
+
+#image5 {
+  margin: 10px 140px;
+}
+
+#top-secret5 {
+  margin: 185px 165px;
+}
+
+#image6 {
+  margin: 10px 260px;  
+}
+
+#top-secret6 {
+  margin: 175px 294px;
+}
+
+#image7 {
+  margin: 10px 10px;  
+}
+
+#top-secret7 {
+  margin: 370px 33px;
+}
+
+#image8 {
+  margin: 10px 140px;  
+}
+
+#top-secret8 {
+  margin: 370px 167px;
+}
+
+
+#image9 {
+  margin: 10px 259px;  
+}
+
+#top-secret9 {
+  margin: 370px 287px;
+}
+
+
+
+.strong-title {
+  position: absolute;
+  font-size: 12px;
+  color: green;
+  cursor: pointer;
+
+}
+
+.strong-title:hover {
+  font-size: 13px;
+  color: red;
+  cursor: pointer;
+}
+
+
+.top-secret-img {
+  position: absolute;
+  width: 110px;
+  height: 130px;
+  cursor: pointer;
+  padding: 3px 10px;
+}
+
+/*NEXT PAGE BUTTONS*/
+
+.active-next-page-btn {
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  border-radius: 20px;
+  background-color: #000;
+  margin: 151px 145px;
+  opacity: .6;
+}
+
+.active-next-page-btn:hover {
+  height: 25px;
+  width: 25px;
+  background-color: blue;
+}
+
+.page {
+  position: absolute;
+  font-size: 14px;
+  margin: -5px -4px;
+}
+
+.page:hover{
+  color: green;
+  font-size: 18px;
+
+}
+
+/*#button-2 {
+  position: absolute;
+  margin: 152px 183px;
+}
+
+#page-btn-2 {
+  position: relative;
+  margin: 5px 5px;
+}
+
+#button-3 {
+  position: absolute;
+  margin: 152px 220px;
+}
+
+#page-btn-3 {
+  position: relative;
+  margin: 5px 5px;
+}
+
+
+
+#page-btn-next {
+  font-size: 23px;
+  font-weight: 600;
+  text-decoration: none;
+  color: green;
+  position: absolute;
+  margin: -15px -10px;
+}
+
+#page-btn-next:hover {
+  color: gold;
+  font-weight:bolder;
+  font-size: 20px;
+
+}*/
+
+#sub-btn {
+  border: none;
+  position: absolute;
+  margin: 200px 135px;
+  float: right;
+  background: rgba(0,0,0,.87);
+  opacity: .5;
+  font-family: 'Mortal Kombat 4', sans-serif;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease 0s;
+}
+
+#sub-btn:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  color: red;
+}
+
+
+
+/* FOOTER */
+
+footer ul li {
+  list-style: none;
+  padding: 5px 5px;
+
+  
+
+  
+}
+
+footer {
+  list-style: none;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  margin: -33px;
+  margin-top: 100px;
+  background-color: 000;
+  opacity: .6;
+  padding: 150px 25px;
+  list-style: none;
+}
+
+.footer-link-align {
+  height: 30px;
+  line-height: 35px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#frontend-backend:hover {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  height: 29px;
+  line-height: 30px;
+}
+
+ 
+footer ul li:hover ul li{
+  list-style: none;
+  /*margin: 113px -6px;*/
+  line-height: 5px;
+  letter-spacing: 2px;
+  position: absolute;
+  background-color: white;
+  display:contents;
+  border-radius: 20px;
+}
+
+/*ul li:hover ul li {
+  display: block;
+} 
+
+
+/*UL TO THE PORTFOLIO DROP DOWN MENU*/
+/*.portfolio-drop-down li a{
+  font-size: 14px;
+  transition: all 0.5s ease 0s;
+  line-height: 12px;
+  margin: 0;
+  border-radius: 12px;
+}
+
+/*UL TO THE PORTFOLIO DROP DOWN MENU:HOVER*/
+/*.portfolio-drop-down li a:hover{
+  position: initial;
+}
+
+/*LI TO THE NAVIGATION LINKS:HOVER */
+/*li .active-navbar-links a:hover {
+  background-color: white;
+  margin-bottom: 7px;
+  padding: 5px;
+  margin: 0;
+  border-radius: 20px;
+  transition: all 0.5s ease 0s;
+}
+
+/*UL THAT HOLDS ALL OF THE HEADER NAVIGATION LINKS*/
+/*.nav-links {
+  padding-top: 0px;
+  display:flex;
+  height:100px;
+  padding: 0px;
+  list-style: none;
+  justify-content:space-between; 
+}
+
+/*UL LI A HOLDS ALL OF THE LINKS WITH ANCHOR TAGS*/
+/*ul li a{
+  text-decoration: none;
+  justify-content:space-between; 
+  float: left;
+  width: 100px;
+  height: 40px;
+  background-color: black; 
+  line-height: 10px;
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: white;
+  display:block;
+  opacity: .8;
+}
+
+
+/*UL LI A:HOVER HOLDS ALL OF THE NAV LINKS WITH ANCHOR TAGS*/
+/*ul li a:hover  {
+  color: red;
+}
+
+/*UL LI UL LI HIDES THE PORTFOLIO SUBLINKS*/
+/*ul li ul li {
+  display: none;
+
+}
+
+
+/*UL LI: HOVER UL LI DISPLAYS THE PORTFOLIO SUBLINKS UPON HOVER*/
+/*ul li:hover ul li {
+  display: block;
+} */
+      
+
+
+
+
+
+
+
+/*RESPONSIVENESS FOR MOBILE DEVICES*/
+@media all and (max-width: 481px) { 
+.toggle-button {
+  display: flex;
+  }
+}
+
+.navbar-links {
+  display: none; /*display none will hide the nav links by default*/
+  width: 100%;
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: flex-start;
+    
+}
+
+.navbar-links ul {
+  width: 100%;
+  flex-direction: column;
+}
+
+.navbar-links li {
+  text-align: center;
+}
+
+.navbar-links li a{
+  padding: .5rem 1rem;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+
+/*RESPONSIVENESS FOR TABLET DEVICES*/
+
+@media all and (min-width: 481px) {
+  .nt-conductor-mobile-nav-wrapper {
+    display: none;
+  }
+
+  /*EINSTEIN-LOGO-TOP-LEFT NAV WRAPPER*/
+#einstein-logo {
+  margin: 0px 0px;
+  width: 2.3em;
+  height: 2.3em;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/*EINSTEIN-LOGO-TOP-LEFT:HOVER NAV WRAPPER*/
+#einstein-logo:hover{
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 5em;
+}
+
+}
+/*RESPONSIVENESS FOR DESKTOP DEVICES*/
+
+@media all and (min-width: 769px) {
+/*EINSTEIN-LOGO-TOP-LEFT NAV WRAPPER*/
+#einstein-logo {
+  margin: 0px 0px;
+  width: 2.3em;
+  height: 2.3em;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+/*EINSTEIN-LOGO-TOP-LEFT:HOVER NAV WRAPPER*/
+#einstein-logo:hover{
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 5em;
+}
+
+#button-1 {
+  margin: 320px 420px;
+}
+
+#button-2 {
+  margin: 321px 460px;
+}
+
+#button-3 {
+  margin: 321px 499px;
+}
+
+
+
+footer {
+  margin: -50px -30px;
+}
+
+footer ul li {
+  margin: 30px 0px 0px 0px;
+}
+
+.nt-conductor-mobile-nav-wrapper {
+  display: none;
+}
+
+#heading {
+  text-align: center;
+  font-size: 24px;
+}
+
+
+.strong-title {
+  font-size: 18px;
+  text-align: center;
+}
+
+#sub-btn {
+  position: absolute;
+  margin: 100px 2px;
+}
+
+
+#image1 {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  padding: 2px 2px;
+  margin: 5px 130px;
+}
+
+#top-secret1 {
+  position: absolute;
+  margin: -30px 170px;
+
+}
+
+
+
+#image2 {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  padding: 2px 2px;
+  margin: 5px 260px;
+}
+
+#top-secret2 {
+  position: absolute;
+  margin: -30px 310px;
+
+}
+
+
+
+#image3 {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  padding: 2px 2px;
+  margin: 30px 390px;
+}
+
+#top-secret3 {
+  position: absolute;
+  margin: -5px 445px;
+
+}
+
+
+#image4 {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  padding: 2px 2px;
+  margin: 30px 525px;
+}
+
+#top-secret4 {
+  position: absolute;
+  margin: -5px 555px;
+
+}
+
+
+#image5 {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  padding: 2px 2px;
+  margin: 5px 659px;
+}
+
+#top-secret5 {
+  position: absolute;
+  margin: -30px 690px;
+
+}
+
+
+
+#image6 {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  padding: px 2px;
+  margin: 5px 790px;
+}
+
+#top-secret6 {
+  position: absolute;
+  margin: -30px 840px;
+
+}
+
+#image7 {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  padding: 2px 2px;
+  margin: 180px 128px;
+}
+
+#top-secret7 {
+  position: absolute;
+  margin: 140px 170px;
+
+}
+
+
+#image8 {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  padding: 2px 2px;
+  margin: 180px 262px;
+}
+
+#top-secret8 {
+  position: absolute;
+  margin: 140px 310px;
+
+}
+
+
+#image9 {
+  position:absolute;
+  width: 130px;
+  height: 130px;
+  padding: 2px 2px;
+  margin: 230px 800px;
+}
+
+#top-secret9 {
+  position: absolute;
+  margin: 140px 829px;
+
+}
+
+}
