@@ -298,7 +298,6 @@ ul li:hover ul li {
 }
 
 
-
 iframe {
   width: 420px;
   height: 300px;
@@ -310,7 +309,7 @@ iframe {
 /*CONTACT BUTTON*/
 button {
   border: none;
-  position:absolute; top: 10px; right: 76.7%;
+  position:absolute; top: 10px; right: 110.7%;
   float:left;
   background-color: black;
   font-family: 'Mortal Kombat 4', sans-serif;
