@@ -66,3 +66,24 @@ const typed = new Typed('.multiple-text', {
   backDelay: 1000,
   loop: true
 });
+
+
+// Email Contact Button ACTIVE 
+
+function sendEmail() {
+  Email.send({
+    SecureToken : "b283dff0-c615-4b5c-8ecf-7198e0da4bb3",
+    To : 'kingarthurcarverharbor@gmail.com',
+    From: 'kingarthurcarverharbor@gmail.com',
+    /*From : document.getElementById("email").value,*/
+    Subject : "New Contact Form Inquiriy",
+    Body : "Name: " + document.getElementById("name").value
+    + "<br> Email: " + document.getElementById("email").value
+    + "<br> Email-Subject: " + document.getElementById("email-subject").value
+    + "<br> Phone no: " + document.getElementById("phone").value
+    + "<br> Message: " + document.getElementById("message").value
+}).then(
+  message => alert("Message Sent Successfully")
+);
+
+}
