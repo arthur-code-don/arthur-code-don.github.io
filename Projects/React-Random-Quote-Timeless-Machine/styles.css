@@ -1,0 +1,17 @@
+* {
+   transition: all 0.2s ease-in-out;
+}
+
+.card-text, .card-title, .card-header {
+  margin-right: 20px;
+  text-align: center;
+}
+
+
+.jumbotron div{
+  width: 100%;
+}
+
+.custom-width {
+  width: 100px; /* Set the desired width */
+}

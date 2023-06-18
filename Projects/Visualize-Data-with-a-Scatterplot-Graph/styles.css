@@ -1,0 +1,16 @@
+.dot {
+  fill: steelblue;
+  stroke: white;
+}
+
+#tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.hidden {
+  display: none;
+}

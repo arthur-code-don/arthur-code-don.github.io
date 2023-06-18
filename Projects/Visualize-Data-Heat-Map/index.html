@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Heat Map</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1 id="title">Monthly Global Land-Surface Temperature</h1>
+  <p id="description">1753 - 2015: base temperature <span id="base-temp"></span>&#8451;</p>
+  <svg id="chart"></svg>
+
+  <div id="tooltip" class="hidden">
+    <p><span id="year"></span> - <span id="month"></span></p>
+    <p><span id="temperature"></span>&#8451;</p>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

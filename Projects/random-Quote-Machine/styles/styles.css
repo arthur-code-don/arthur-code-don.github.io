@@ -1,0 +1,25 @@
+/* styles.css */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+#quote-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px auto; /* Center the quote box horizontally */
+  background-color: #f9f9f9;
+  max-width: 600px; /* Limit the width of the quote box */
+}
+
+body {
+  background: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'mortal kombat 4';
+
+}
+
+i {
+  cursor: pointer;
+}
+
