@@ -1,0 +1,29 @@
+
+.bg-info div{
+  background-color: black;
+  color: red;
+  font-family: 'mortal kombat 4', sans-serif;
+}
+
+.max-slide {
+  position: absolute;
+  margin: -25px 250px;
+}
+
+.min-slide {
+  position: absolute;
+  margin: -25px 650px;
+}
+
+.speedy {
+  margin: -5px 50px;
+}
+
+.btn {
+  color: red;
+}
+
+.btn:hover {
+  background-color: green;
+  color: black;
+}
