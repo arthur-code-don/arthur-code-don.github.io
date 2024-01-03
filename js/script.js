@@ -60,7 +60,7 @@ ScrollReveal().reveal('.home-content p, .about-content',{ origin: 'right'});
 /******************************** type js **********************************/
 
 const typed = new Typed('.multiple-text', {
-  strings: ['Software Engineer','Web Developer', 'Frontend', 'Backend', 'App Developer', 'Smart Contract, NFT and Token Creation'],
+  strings: ['Software Engineer','Web Developer', 'Frontend', 'Backend', 'App Developer', 'Smart Contracts', 'NFTs & Token Creation', 'Blockchain'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
