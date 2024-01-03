@@ -168,6 +168,10 @@ span {
   font-weight: 600;
 }
 
+.btn-hire {
+ margin: 10px 65px;
+}
+
 .btn:hover {
   box-shadow: none;
 }
