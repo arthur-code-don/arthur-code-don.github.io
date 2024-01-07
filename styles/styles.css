@@ -170,6 +170,8 @@ span {
 
 .btn-hire {
  margin: 10px 65px;
+ display: inline-block;
+  margin-left: 50px;
 }
 
 .btn:hover {
